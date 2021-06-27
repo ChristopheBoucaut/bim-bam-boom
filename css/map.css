@@ -1,0 +1,33 @@
+.map {
+    display: grid;
+    width: fit-content;
+}
+
+.map > div {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.map > div.wall {
+    background-color: grey;
+}
+
+.map > div.wall.invincible {
+    background-color: black;
+}
+
+.map > div.character-red {
+    background-color: rgb(255 0 0 / 50%);
+}
+
+.map > div.character-blue {
+    background-color: rgb(0 0 255 / 50%);
+}
+
+.map > div.bomb::before {
+    content: '💣';
+}
+
+.map > div.bomb-explosion::before {
+    content: '💥';
+}
